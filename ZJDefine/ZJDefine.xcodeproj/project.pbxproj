@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3E513A8BAD918221CED6270 /* libPods-ZJDefine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C85397E85903C144AD10AD /* libPods-ZJDefine.a */; };
 		F7B522A024A03E4200B72172 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B5229F24A03E4200B72172 /* AppDelegate.m */; };
 		F7B522A324A03E4200B72172 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B522A224A03E4200B72172 /* SceneDelegate.m */; };
 		F7B522A624A03E4200B72172 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B522A524A03E4200B72172 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		537B24FE48BE3A832365E154 /* Pods-ZJDefine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJDefine.debug.xcconfig"; path = "Target Support Files/Pods-ZJDefine/Pods-ZJDefine.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C85397E85903C144AD10AD /* libPods-ZJDefine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJDefine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B5229B24A03E4200B72172 /* ZJDefine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDefine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B5229E24A03E4200B72172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7B5229F24A03E4200B72172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		F7B522AF24A03E4300B72172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B522B024A03E4300B72172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7B522B824A03EA300B72172 /* ZJModuleDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJModuleDefine.h; sourceTree = "<group>"; };
+		FB21E12F8334BB28571FE765 /* Pods-ZJDefine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJDefine.release.xcconfig"; path = "Target Support Files/Pods-ZJDefine/Pods-ZJDefine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E513A8BAD918221CED6270 /* libPods-ZJDefine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08682077D8199A6229F6E6AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				537B24FE48BE3A832365E154 /* Pods-ZJDefine.debug.xcconfig */,
+				FB21E12F8334BB28571FE765 /* Pods-ZJDefine.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8FD3CA82218D526833E1189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1C85397E85903C144AD10AD /* libPods-ZJDefine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7B5229224A03E4200B72172 = {
 			isa = PBXGroup;
 			children = (
 				F7B5229D24A03E4200B72172 /* ZJDefine */,
 				F7B5229C24A03E4200B72172 /* Products */,
+				08682077D8199A6229F6E6AF /* Pods */,
+				B8FD3CA82218D526833E1189 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +118,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7B522B424A03E4300B72172 /* Build configuration list for PBXNativeTarget "ZJDefine" */;
 			buildPhases = (
+				C6BB790E475D74E926F81432 /* [CP] Check Pods Manifest.lock */,
 				F7B5229724A03E4200B72172 /* Sources */,
 				F7B5229824A03E4200B72172 /* Frameworks */,
 				F7B5229924A03E4200B72172 /* Resources */,
@@ -150,6 +176,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6BB790E475D74E926F81432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZJDefine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7B5229724A03E4200B72172 /* Sources */ = {
@@ -297,6 +348,7 @@
 		};
 		F7B522B524A03E4300B72172 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537B24FE48BE3A832365E154 /* Pods-ZJDefine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +366,7 @@
 		};
 		F7B522B624A03E4300B72172 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB21E12F8334BB28571FE765 /* Pods-ZJDefine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

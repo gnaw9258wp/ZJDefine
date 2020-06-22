@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ZJDefine"
   spec.version      = "0.0.1"
-  spec.summary      = "A short ZJDefine."
+  spec.summary      = "A short"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,8 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC 
-                               ZJDefine 是一个用于保存一些常用宏定义的类
-                        DESC
+                              ZJDefine 是一个用于保存一些常用工具类的工具
+                         DESC
 
   spec.homepage     = "https://github.com/gnaw9258wp/ZJDefine"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
